@@ -1,7 +1,9 @@
 int cm = 0;
 long readUltrasonicDistance(int triggerPin, int echoPin)
 {
-	pinMode(triggerPin, OUTPUT); // Clear the trigger digitalWrite(triggerPin, LOW); delayMicroseconds(2);
+	pinMode(triggerPin, OUTPUT); // Clear the trigger 
+	digitalWrite(triggerPin, LOW);
+	delayMicroseconds(2);
 	digitalWrite(triggerPin, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(triggerPin, LOW);
